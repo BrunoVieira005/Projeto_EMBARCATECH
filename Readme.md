@@ -95,7 +95,7 @@ cd nome-do-repositorio
 ## 📩 Contato  
 
 Caso tenha dúvidas ou sugestões, entre em contato:  
-📧 **brunorv2005l@gmail.com**  
+📧 **brunorv2005@gmail.com**  
 🔗 **[GitHub](https://github.com/BrunoVieira005)**  
 
 ---
