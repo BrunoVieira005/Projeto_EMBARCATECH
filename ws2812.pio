@@ -1,0 +1,12 @@
+.program ws2812
+.side_set 1 opt  ; Define o side-set com 1 bit (opcional)
+
+.wrap_target
+bitloop:
+    out x, 1       side 0 [1]  ; Envia 1 bit, sem side-set
+    jmp !x do_zero side 1 [1]  ; Se o bit for 0, pula para do_zero com side-set
+    jmp bitloop    side 1 [1]  ; Continua o loop com side-set
+do_zero:
+    nop            side 0 [1]  ; Nada a fazer, sem side-set
+    jmp bitloop    side 0 [1]  ; Volta ao loop sem side-set
+.wrap
